@@ -30,6 +30,23 @@ import ShallowEqual from './R029_ShallowEqual'
 import FunctionComponent from './R030_FunctionComponent'
 import ReactHook from './R031_ReactHook'
 import Fragments from './R032_Fragments'
+import ReturnMap from './R033_ReturnMap'
+import { useState } from 'react';
+
+function Myfunction(props){
+  const [a, aForSetState] = useState('값1');
+
+
+  return(
+  <div>
+        <h2>함수형태 Component</h2>
+        <div>{props.title}</div>
+        <div>{props.content}</div>
+        <button onClick={()=> {console.log("클릭이벤트"); aForSetState("변경된 값")}}>변경확인</button>
+        <div>{a}</div>
+      </div>
+      )
+}
 
 function App() {
   // DB 에서 데이터 읽어오기
@@ -44,9 +61,12 @@ function App() {
   //       f1:console.log("FunctionProps: function!"),
   //       BooleanTrueFalse:true
   // };
+
+
   return (
     <div className="App">
       <h1>Hello React</h1>
+      
       {/* <ImportComponent></ImportComponent>
       <LifecycleEx></LifecycleEx>
       <LifecycleEx1></LifecycleEx1> */}
@@ -106,7 +126,8 @@ function App() {
       {/* <ShallowEqual/> */}
       {/* <FunctionComponent contents="[THIS IS FunctionComponent]"/> */}
       {/* <ReactHook/> */}
-      <Fragments/>
+      {/* <Fragments/> */}
+      <ReturnMap/>
 
     </div>
   );
