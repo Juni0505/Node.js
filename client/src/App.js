@@ -31,6 +31,12 @@ import FunctionComponent from './R030_FunctionComponent'
 import ReactHook from './R031_ReactHook'
 import Fragments from './R032_Fragments'
 import ReturnMap from './R033_ReturnMap'
+import ReactstrapAlerts from './R034_ReactstrapAlerts'
+import ReactstrapBadges from './R035_ReactstrapBadges'
+import ReactstrapBreadcrumbs from './R036_ReactstrapBreadcrumbs'
+import ReactstrapDropdown from './R037_ReactstrapDropdown'
+import ReactstrapButtonGroup from './R038_ReactstrapButtonGroup'
+import 'bootstrap/dist/css/bootstrap.css'
 import { useState } from 'react';
 
 function Myfunction(props){
@@ -66,7 +72,15 @@ function App() {
   return (
     <div className="App">
       <h1>Hello React</h1>
-      
+      <p>CSS 적용하기</p>
+      <ReactstrapAlerts/>
+      <ReactstrapBadges/>
+      <ReactstrapDropdown/>
+      <ReactstrapButtonGroup/>
+      {/* <ReactstrapBreadcrumbs/> */}
+
+
+
       {/* <ImportComponent></ImportComponent>
       <LifecycleEx></LifecycleEx>
       <LifecycleEx1></LifecycleEx1> */}
@@ -127,7 +141,7 @@ function App() {
       {/* <FunctionComponent contents="[THIS IS FunctionComponent]"/> */}
       {/* <ReactHook/> */}
       {/* <Fragments/> */}
-      <ReturnMap/>
+      {/* <ReturnMap/> */}
 
     </div>
   );
