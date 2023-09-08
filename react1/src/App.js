@@ -10,7 +10,7 @@ import React, {useState} from 'react';
 // TODO info - id 활용해서 보기
 
 function App() {
-  const [a1,setA1] = useState([10,20,30]);
+  // const [a1,setA1] = useState([10,20,30]);
 
   const [fruitList, setFruitList] = useState(
     [
@@ -41,8 +41,25 @@ function App() {
     console.log("insertHandler 함수 실행");
     console.log(fruit);
     // 기존 fruitList에 동일한 것이 없다면 추가
-
+    // 유효성 검사
+    if(!fruit.name || !fruit.price || !fruit.count){
+      alert("모든값을 입력해주세요.")
+      return;
+    }
+    // 유효성 검사 - 같은 name없도록
+    const isExist = fruitList.some((fruit)=>fruit.name == fruit.name );
+    if(isExist){
+      alert("이미 등록된 과일입니다. 다시 등록해주세요.");
+      
+      return;
+    }
     setFruitList([...fruitList, fruit]);
+  }
+  const onClickDeleteHandler = (name) => {
+    console.log(name);
+    const filterfruit = fruitList.filter((fruit)=> 
+    fruit.name != name);
+    setFruitList(filterfruit)
   }
   const onChangeInput = (e) => {
     console.log(e.target);
@@ -81,6 +98,7 @@ function App() {
                 <td>{fruit.name}</td>
                 <td>{fruit.price}</td>
                 <td>{fruit.count}</td>
+                <td><button onClick={()=>(onClickDeleteHandler(fruit.name))}>삭제</button></td>
               </tr>
               )
             })}
@@ -119,6 +137,7 @@ function App() {
       </>
     )
   }
+  
 
   return (
     <BrowserRouter>
