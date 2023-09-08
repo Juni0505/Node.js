@@ -37,8 +37,13 @@ import ReactstrapBadges from './R035_ReactstrapBadges'
 import ReactstrapBreadcrumbs from './R036_ReactstrapBreadcrumbs'
 import ReactstrapDropdown from './R037_ReactstrapDropdown'
 import ReactstrapButtonGroup from './R038_ReactstrapButtonGroup'
+import ReactstrapBottons from './R039_ReactstrapBottons'
 import 'bootstrap/dist/css/bootstrap.css'
 import react, { useState } from 'react';
+import R040_ReactstrapCard from './R040_ReactstrapCard';
+import R041_ReactstrapCarousel from './R041_ReactstrapCarousel';
+import R042_ReactstrapCollapse from './R042_ReactstrapCollapse';
+import R043_ReactstrapFad from './R043_ReactstrapFad';
 
 function Myfunction(props){
   const [a, aForSetState] = useState('값1');
@@ -74,13 +79,16 @@ function App() {
     <div className="App">
       <h1>Hello React</h1>
       <p>CSS 적용하기</p>
-      <ReactstrapAlerts/>
+      {/* <ReactstrapAlerts/>
       <ReactstrapBadges/>
       <ReactstrapDropdown/>
-      <ReactstrapButtonGroup/>
+      <ReactstrapButtonGroup/> */}
       {/* <ReactstrapBreadcrumbs/> */}
-
-
+      {/* <ReactstrapBottons/> */}
+      {/* <R040_ReactstrapCard/> */}
+      {/* <R041_ReactstrapCarousel/> */}
+      {/* <R042_ReactstrapCollapse/> */}
+      <R043_ReactstrapFad/>
 
       {/* <ImportComponent></ImportComponent>
       <LifecycleEx></LifecycleEx>
