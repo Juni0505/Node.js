@@ -117,8 +117,9 @@ function App() {
       {/* <R063_CallbackFunc/> */}
       {/* <R064_Promise/> */}
       {/* <R065_Promise/> */}
-      <R066_onClick/>
-      <R067_onChange/>
+      {/* <R066_onClick/> */}
+      {/* <R067_onChange/> */}
+      
 
       {/* <ImportComponent></ImportComponent>
       <LifecycleEx></LifecycleEx>

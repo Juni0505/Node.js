@@ -10,6 +10,7 @@ class R068_onMouseMove extends Component {
         <div onMouseMove={e => this.MouseMove("div")}>
           <h3>DIV onMouseMove</h3>
         </div>
+        <input type="text" onMouseMove={}
       </>
     )
   }
