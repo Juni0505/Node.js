@@ -44,6 +44,21 @@ import R040_ReactstrapCard from './R040_ReactstrapCard';
 import R041_ReactstrapCarousel from './R041_ReactstrapCarousel';
 import R042_ReactstrapCollapse from './R042_ReactstrapCollapse';
 import R043_ReactstrapFad from './R043_ReactstrapFad';
+import R044_ReactstrapFrom from './R044_ReactstrapForm';
+import R045_ReactstrapInputGroup from './R045_ReactstrapInputGroup';
+import R047_ReactstrapListGroup from './R047_ReactstrapListGroup';
+import R048_ReactstrapModal from './R048_ReactstrapModal';
+import R049_ReactstrapNavBar from './R049_ReactstrapNavbar';
+import R059_FetchGet from './R059_FetchGet';
+import R060_FetchPost from './R060_FetchPost';
+import R061_AxiosGet from './R061_AxiosGet';
+import R062_AxiosPost from './R062_AxiosPost';
+import R063_CallbackFunc from './R063_CallbackFunc';
+import R064_Promise from './R064_Promise';
+import R065_Promise from './R065_Promis';
+import R066_onClick from './R066_onClick';
+import R067_onChange from './R067_onChange';
+// import R046_ReactstrapJumbotron from './R046_ReactstrapJumbotron';
 
 function Myfunction(props){
   const [a, aForSetState] = useState('값1');
@@ -88,7 +103,22 @@ function App() {
       {/* <R040_ReactstrapCard/> */}
       {/* <R041_ReactstrapCarousel/> */}
       {/* <R042_ReactstrapCollapse/> */}
-      <R043_ReactstrapFad/>
+      {/* <R043_ReactstrapFad/> */}
+      {/* <R044_ReactstrapFrom/> */}
+      {/* <R045_ReactstrapInputGroup/> */}
+      {/* <R046_ReactstrapJumbotron/> */}
+      <R047_ReactstrapListGroup/>
+      <R048_ReactstrapModal/>
+      <R049_ReactstrapNavBar/>
+      {/* <R059_FetchGet/> */}
+      {/* <R060_FetchPost/> */}
+      {/* <R061_AxiosGet/> */}
+      {/* <R062_AxiosPost/> */}
+      {/* <R063_CallbackFunc/> */}
+      {/* <R064_Promise/> */}
+      {/* <R065_Promise/> */}
+      <R066_onClick/>
+      <R067_onChange/>
 
       {/* <ImportComponent></ImportComponent>
       <LifecycleEx></LifecycleEx>
